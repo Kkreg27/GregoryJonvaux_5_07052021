@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap");
+.block-header {
+  background-image: url("../img/img1.jpg");
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-repeat: no-repeat;
+  background-position-y: -500px;
+  background-size: 100%;
+  padding: 5%;
+}
+
+.block-header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+.block-header nav h1 {
+  font-family: "Nanum Brush Script", cursive;
+  font-size: 100px;
+  margin-left: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.block-header nav h1 a {
+  text-decoration: none;
+  color: black;
+  margin: 10px;
+}
+
+.block-header nav .block-header__element-menu {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.block-header nav .block-header__element-menu li {
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 10px;
+  background-color: white;
+}
+
+.block-header nav .block-header__element-menu li:hover {
+  background-color: rgba(214, 157, 23, 0.8);
+}
+
+.block-header nav .block-header__element-menu li a {
+  text-decoration: none;
+  color: black;
+  font-size: 150%;
+}
+
+.block-header nav .block-header__element-cp {
+  list-style: none;
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  border: none;
+  text-align: center;
+}
+
+.block-header nav .block-header__element-cp li {
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.block-header nav .block-header__element-cp li a {
+  text-decoration: none;
+  color: black;
+}
+
+.block-main {
+  margin-top: 50px;
+}
+
+.block-main .block-main__element-photo {
+  width: 95%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.block-main .block-main__element-photo .produits {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+}
+
+.block-main .block-main__element-photo .produits .description {
+  margin: 20px;
+  color: black;
+  font-size: 200%;
+}
+
+.block-main .block-main__element-photo .produits:nth-child(2), .block-main .block-main__element-photo .produits:nth-child(4) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+.block-main .block-main__element-photo .produits .photo {
+  border: grey 1px solid;
+  -webkit-box-shadow: grey 0px 10px 20px;
+          box-shadow: grey 0px 10px 20px;
+  width: 40%;
+  padding: 0;
+  border-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.block-footer {
+  background-color: rgba(214, 157, 23, 0.2);
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 40px;
+}
+
+.block-footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.block-footer ul li {
+  text-decoration: none;
+  text-align: left;
+}
+
+.block-footer ul li a {
+  color: black;
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */
