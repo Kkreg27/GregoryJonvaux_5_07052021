@@ -3,93 +3,96 @@
   background-image: url("../img/img1.jpg");
   -o-object-fit: cover;
      object-fit: cover;
-  background-repeat: no-repeat;
   background-position-y: -500px;
   background-size: 100%;
-  padding: 5%;
-}
-
-.block-header nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 20px;
 }
 
-.block-header nav h1 {
-  font-family: "Nanum Brush Script", cursive;
-  font-size: 100px;
-  margin-left: 20px;
-  margin-top: 0;
-  margin-bottom: 0;
-  background-color: white;
-  border-radius: 20px;
-}
-
-.block-header nav h1 a {
-  text-decoration: none;
-  color: black;
-  margin: 10px;
-}
-
-.block-header nav .block-header__element-menu {
-  list-style: none;
+.block-header .block-header__element-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  height: 100%;
+  vertical-align: middle;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.block-header nav .block-header__element-menu li {
+.block-header .block-header__element-nav a {
   text-decoration: none;
-  padding: 10px;
-  border-radius: 15px;
-  margin: 10px;
-  background-color: white;
 }
 
-.block-header nav .block-header__element-menu li:hover {
-  background-color: rgba(214, 157, 23, 0.8);
-}
-
-.block-header nav .block-header__element-menu li a {
-  text-decoration: none;
+.block-header .block-header__element-nav a h1 {
   color: black;
-  font-size: 150%;
-}
-
-.block-header nav .block-header__element-cp {
-  list-style: none;
-  position: absolute;
-  top: 5px;
-  right: 20px;
-  border: none;
-  text-align: center;
-}
-
-.block-header nav .block-header__element-cp li {
+  font-family: Nanum Brush Script;
+  font-size: 500%;
   background-color: white;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 10px;
+  border-radius: 20px;
+  padding-top: 0;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.block-header nav .block-header__element-cp li a {
-  text-decoration: none;
+.block-header .block-header__element-nav .block-header__element-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.block-header .block-header__element-nav .block-header__element-menu li {
+  list-style-type: none;
+}
+
+.block-header .block-header__element-nav .block-header__element-menu li a {
+  font-size: 150%;
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+}
+
+.block-header .block-header__element-nav .block-header__element-cp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0;
+}
+
+.block-header .block-header__element-nav .block-header__element-cp li {
+  list-style-type: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 15%;
+  border-radius: 10px;
+  background-color: white;
+  margin-top: 10px;
+}
+
+.block-header .block-header__element-nav .block-header__element-cp li a {
   color: black;
 }
 
 .block-main {
-  margin-top: 50px;
+  padding: 4%;
 }
 
 .block-main .block-main__element-photo {
-  width: 95%;
-  margin: 0 auto;
+  margin-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -111,7 +114,7 @@
   margin-top: 30px;
 }
 
-.block-main .block-main__element-photo .produits .description {
+.block-main .block-main__element-photo .produits .namePrice {
   margin: 20px;
   color: black;
   font-size: 200%;
@@ -130,13 +133,11 @@
           justify-content: right;
 }
 
-.block-main .block-main__element-photo .produits .photo {
-  border: grey 1px solid;
+.block-main .block-main__element-photo .produits .photoIndex {
   -webkit-box-shadow: grey 0px 10px 20px;
           box-shadow: grey 0px 10px 20px;
-  width: 40%;
+  width: 25%;
   padding: 0;
-  border-radius: 20px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -149,7 +150,6 @@
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-top: 40px;
 }
 
 .block-footer ul {
@@ -165,5 +165,82 @@
 .block-footer ul li a {
   color: black;
   text-decoration: none;
+}
+
+.block-main-produits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.block-main-produits .divUnPageProduit {
+  width: 45%;
+}
+
+.block-main-produits .divUnPageProduit .photoProduit {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: grey 0px 10px 20px;
+          box-shadow: grey 0px 10px 20px;
+}
+
+.block-main-produits .divDeuxPageProduit {
+  width: 45%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.block-main-produits .divDeuxPageProduit .nomProduitDansPageProduit {
+  text-align: center;
+  font-size: 300%;
+}
+
+.block-main-produits .divDeuxPageProduit .prixProduitDansPageProduit span {
+  font-size: 200%;
+}
+
+.block-main-produits .divDeuxPageProduit .selectLentilles {
+  margin: 20px;
+  background-color: white;
+}
+
+.block-main-produits .divDeuxPageProduit .buttonAjouterPanier {
+  width: 30%;
+  margin: 0 auto;
+}
+
+.block-main-panier {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 20px;
+}
+
+.block-main-panier .divPanier {
+  width: 60%;
+  height: 500px;
+  background-color: #cec8c8;
+}
+
+.block-main-panier .divTotal {
+  width: 35%;
+  height: 500px;
+  background-color: #c5c5c5;
 }
 /*# sourceMappingURL=style.css.map */
