@@ -169,12 +169,61 @@
   margin: 20px;
   .divPanier {
     width: 60%;
-    height: 500px;
-    background-color: rgb(206, 200, 200);
+    border: black solid 1px;
+    .infoProduitImagePanier {
+      display: flex;
+      justify-content: space-around;
+      border-bottom: solid 1px black;
+      text-align: center;
+      .infoImgProduitImagePanier {
+        width: 16%;
+      }
+      .infoNomProduitImagePanier {
+        width: 16%;
+      }
+      .infoLentilleProduitImagePanier {
+        width: 16%;
+      }
+      .infoQuantiteProduitImagePanier {
+        width: 16%;
+      }
+      .infoPrixProduitImagePanier {
+        width: 16%;
+      }
+      .infoTrashProduitImagePanier {
+        width: 16%;
+      }
+    }
+    .blocProduitPanier {
+      align-items: center;
+      justify-content: space-around;
+      display: flex;
+      border-bottom: black 1px solid;
+      text-align: center;
+      padding: 5px;
+      .photoProduitPanier {
+        width: 16%;
+      }
+      .nomProduitPanier {
+        width: 16%;
+      }
+      .optionProduitPanier {
+        width: 16%;
+      }
+      .quantiteProduitPanier {
+        width: 16%;
+      }
+      .prixProduitPanier {
+        width: 16%;
+      }
+      .corbeilleProduitPanier {
+        width: 16%;
+      }
+    }
   }
   .divTotal {
     width: 35%;
     height: 500px;
-    background-color: rgb(197, 197, 197);
+    border: black solid 1px;
   }
 }

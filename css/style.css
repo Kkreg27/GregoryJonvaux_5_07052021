@@ -234,13 +234,84 @@
 
 .block-main-panier .divPanier {
   width: 60%;
-  height: 500px;
-  background-color: #cec8c8;
+  border: black solid 1px;
+}
+
+.block-main-panier .divPanier .infoProduitImagePanier {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-bottom: solid 1px black;
+  text-align: center;
+}
+
+.block-main-panier .divPanier .infoProduitImagePanier .infoImgProduitImagePanier {
+  width: 16%;
+}
+
+.block-main-panier .divPanier .infoProduitImagePanier .infoNomProduitImagePanier {
+  width: 16%;
+}
+
+.block-main-panier .divPanier .infoProduitImagePanier .infoLentilleProduitImagePanier {
+  width: 16%;
+}
+
+.block-main-panier .divPanier .infoProduitImagePanier .infoQuantiteProduitImagePanier {
+  width: 16%;
+}
+
+.block-main-panier .divPanier .infoProduitImagePanier .infoPrixProduitImagePanier {
+  width: 16%;
+}
+
+.block-main-panier .divPanier .infoProduitImagePanier .infoTrashProduitImagePanier {
+  width: 16%;
+}
+
+.block-main-panier .divPanier .blocProduitPanier {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: black 1px solid;
+  text-align: center;
+  padding: 5px;
+}
+
+.block-main-panier .divPanier .blocProduitPanier .photoProduitPanier {
+  width: 16%;
+}
+
+.block-main-panier .divPanier .blocProduitPanier .nomProduitPanier {
+  width: 16%;
+}
+
+.block-main-panier .divPanier .blocProduitPanier .optionProduitPanier {
+  width: 16%;
+}
+
+.block-main-panier .divPanier .blocProduitPanier .quantiteProduitPanier {
+  width: 16%;
+}
+
+.block-main-panier .divPanier .blocProduitPanier .prixProduitPanier {
+  width: 16%;
+}
+
+.block-main-panier .divPanier .blocProduitPanier .corbeilleProduitPanier {
+  width: 16%;
 }
 
 .block-main-panier .divTotal {
   width: 35%;
   height: 500px;
-  background-color: #c5c5c5;
+  border: black solid 1px;
 }
 /*# sourceMappingURL=style.css.map */
