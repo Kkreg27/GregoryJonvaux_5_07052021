@@ -128,6 +128,7 @@ function recupererProduit(infoProduit) {
 
     panier.push(newElem);
     localStorage.setItem("panier", JSON.stringify(panier));
+    console.log(panier);
   });
 
   //
