@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon panier</title>
+    <title>Confirmation</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/fe0addc2bd.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-    <!-- En tete de page -->
     <header class="block-header">
         <nav class="block-header__element-nav">
             <a href="index.html">
@@ -24,35 +24,22 @@
             </ul>
             <ul class="block-header__element-cp">
                 <li><a href="">Mon compte</a></li>
-                <li><a href=""><i class="fas fa-shopping-cart"></i></a></li>
+                <li><a href="panier.html"><i class="fas fa-shopping-cart"></i></a></li>
             </ul>
         </nav>
 
     </header>
-    <!-- Corps principal -->
-    <main class="block-main-panier">
-        <div class="divPanier"></div>
-        <div class="divTotal">
-            <form class="formulaire">
-                <fieldset>
-                    <legend>Veuillez entrer vos informations personnelles</legend>
-                    <input type="text" name="firstName" placeholder="Nom">
-                    <small></small>
-                    <input type="text" name="lastName" placeholder="Prénom">
-                    <small></small>
-                    <input type="text" name="address" placeholder="Adresse">
-                    <small></small>
-                    <input type="text" name="city" placeholder="Ville">
-                    <small></small>
-                    <input type="email" name="email" placeholder="Email">
-                    <small></small>
-                    <input type="submit" value="Valider panier">
+    <main class="block-main__confirmation">
+        <div class="cadre-blanc">
+            <div class="remerciement">
+                <h1>Merci de votre commande</h1>
+                <p>En esperant vous revoir bientot</p>
+            </div>
+            <div class="info-js">
 
-                </fieldset>
-            </form>
+            </div>
         </div>
     </main>
-    <!-- Pied de page  -->
     <footer class="block-footer">
         <nav>
             <h3>A propos</h3>
@@ -77,6 +64,6 @@
         </nav>
     </footer>
 </body>
-<script src="js/panier.js"></script>
+<script src="js/confirmation.js"></script>
 
 </html>

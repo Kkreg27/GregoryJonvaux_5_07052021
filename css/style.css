@@ -144,12 +144,14 @@
 
 .block-footer {
   background-color: rgba(214, 157, 23, 0.2);
-  padding: 20px;
+  padding-top: 10px;
+  margin-top: 3.5cm;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  width: 100%;
 }
 
 .block-footer ul {
@@ -171,6 +173,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 45px;
   padding: 3%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -229,12 +232,11 @@
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin: 20px;
+  margin: 60px;
 }
 
 .block-main-panier .divPanier {
   width: 60%;
-  border: black solid 1px;
 }
 
 .block-main-panier .divPanier .infoProduitImagePanier {
@@ -311,7 +313,79 @@
 
 .block-main-panier .divTotal {
   width: 35%;
-  height: 500px;
-  border: black solid 1px;
+}
+
+.block-main-panier .divTotal .formulaire fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.block-main-panier .divTotal .formulaire fieldset input {
+  margin-top: 10px;
+}
+
+.block-main-panier .divTotal .formulaire fieldset .test-danger {
+  color: red;
+}
+
+.block-main-panier .divTotal .formulaire fieldset .form-danger {
+  border-color: red;
+}
+
+.block-main-panier .divTotal .totalProduit {
+  height: 50%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 150%;
+}
+
+.block-main-panier .divTotal .totalProduit .totalpanier {
+  margin-left: 5px;
+}
+
+.block-main__confirmation {
+  height: 90%;
+  margin-top: 200px;
+}
+
+.block-main__confirmation .cadre-blanc {
+  font-size: 180%;
+  width: 80%;
+  margin: auto;
+}
+
+.block-main__confirmation .cadre-blanc .remerciement {
+  margin: auto;
+  text-align: center;
+  height: 50%;
+}
+
+.block-main__confirmation .cadre-blanc .info-js {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  height: 50%;
 }
 /*# sourceMappingURL=style.css.map */

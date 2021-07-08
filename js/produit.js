@@ -76,6 +76,7 @@ function recupererProduit(infoProduit) {
     let name = infoProduit.name;
     let lense = lentillesCustom;
     let price = infoProduit.price;
+    let id = infoProduit._id;
     let imageUrl = infoProduit.imageUrl;
     let qty = 1;
 
@@ -85,6 +86,7 @@ function recupererProduit(infoProduit) {
       price,
       imageUrl,
       qty,
+      id,
     };
 
     let test =
