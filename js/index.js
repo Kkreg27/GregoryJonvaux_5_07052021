@@ -22,12 +22,10 @@ function afficherLesAppareilsPhoto(api) {
     lien.appendChild(namePrice);
   }
 }
-//*Fonction qui permet l'affichage de données
+//
 async function apiOnPageIndex() {
   await fetch("http://localhost:3000/api/cameras")
     .then((apiBrute) => apiBrute.json())
     .then((apiformatJson) => afficherLesAppareilsPhoto(apiformatJson));
 }
 apiOnPageIndex();
-//*Recupere les données de l'API
-//* Applique une fonction aux données recuperer

@@ -1,4 +1,4 @@
-//************************************************DOM*******************************************************/
+//*******************************************************************************************************/
 let mainDeux = document.querySelector(".block-main-produits");
 //
 let divUnPageProduit = document.querySelector(".divUnPageProduit");
@@ -31,7 +31,7 @@ let buttonAjouterPanier = document.querySelector(".buttonAjouterPanier");
 if (!localStorage.getItem("panier")) {
   localStorage.setItem("panier", JSON.stringify([]));
 }
-//**********************************************Fonctions**************************************************************/
+//************************************************************************************************************/
 function recupererProduit(infoProduit) {
   photoProduit.src = infoProduit.imageUrl;
   nomProduitDansPageProduit.innerHTML = `${infoProduit.name}`;

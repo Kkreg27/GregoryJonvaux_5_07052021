@@ -1,4 +1,4 @@
-//****************************************Panier********************************************************** */
+//****************************************Div*Panier********************************************************* */
 //
 let divPanier = document.querySelector(".divPanier");
 //
@@ -28,10 +28,8 @@ let infoTrashProduitImagePanier = document.querySelector(
   ".infoTrashProduitImagePanier"
 );
 //
-//
 let panierBrut = localStorage.getItem("panier");
 let panier = JSON.parse(panierBrut);
-//
 //
 for (let elem of panier) {
   let blocProduitPanier = document.createElement("div");
@@ -69,15 +67,16 @@ for (let elem of panier) {
   corbeilleProduitPanier.innerHTML = `<i class="far fa-trash-alt"></i>`;
   blocProduitPanier.appendChild(corbeilleProduitPanier);
 }
-//*******************************************Formulaire*&*Prix_Total**************************************************** */
+//*******************************************Div*Formulaire*************************************************** */
 //
 let divTotal = document.querySelector(".divTotal");
 //
 function formField(regex, field, erreur) {
+  //
   let regexe = new RegExp(regex);
   let test = regexe.test(field.value);
   let small = field.nextElementSibling;
-
+  //
   if (test) {
     small.innerHTML = "";
     small.classList.remove("test-danger");
