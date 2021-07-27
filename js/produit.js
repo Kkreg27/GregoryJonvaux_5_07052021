@@ -74,8 +74,8 @@ function recupererProduit(infoProduit) {
       localStorage.setItem("panier", JSON.stringify(panier));
     } else {
       if (
-        nameEstDansLePanier(panier, newElem.name) &&
-        lenseEstDansLePanier(panier, newElem.lense)
+        estDansLePanier(panier, newElem.name, "name") &&
+        estDansLePanier(panier, newElem.lense, "lense")
       ) {
         for (let elem of panier) {
           if (elem.lense === lense) {
@@ -90,17 +90,9 @@ function recupererProduit(infoProduit) {
     }
   });
 }
-function nameEstDansLePanier(array, valueToDetect) {
+function estDansLePanier(array, valueToDetect, category) {
   for (let elem of array) {
-    if (elem.name === valueToDetect) {
-      return true;
-    }
-  }
-  return false;
-}
-function lenseEstDansLePanier(array, valueToDetect) {
-  for (let elem of array) {
-    if (elem.lense === valueToDetect) {
+    if (elem[category] === valueToDetect) {
       return true;
     }
   }
