@@ -61,11 +61,6 @@ for (let elem of panier) {
   prixProduitPanier.classList.add("prixProduitPanier");
   prixProduitPanier.innerText = `${elem.price / 100} €`;
   blocProduitPanier.appendChild(prixProduitPanier);
-
-  let corbeilleProduitPanier = document.createElement("button");
-  corbeilleProduitPanier.classList.add("corbeilleProduitPanier");
-  corbeilleProduitPanier.innerHTML = `<i class="far fa-trash-alt"></i>`;
-  blocProduitPanier.appendChild(corbeilleProduitPanier);
 }
 //*******************************************Div*Formulaire*************************************************** */
 //
